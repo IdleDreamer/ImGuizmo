@@ -1242,7 +1242,7 @@ namespace IMGUIZMO_NAMESPACE
       }
       if(hasRSC && (!gContext.mbUsing || type == MT_ROTATE_SCREEN))
       {
-         drawList->AddCircle(worldToPos(gContext.mModel.v.position, gContext.mViewProjection), gContext.mRadiusSquareCenter * 1.1f, colors[0], 64, circleLineThickness);
+         drawList->AddCircle(worldToPos(gContext.mModel.v.position, gContext.mViewProjection), gContext.mRadiusSquareCenter, colors[0], 64, circleLineThickness);
       }
 
       if (gContext.mbUsing && (gContext.mActualID == -1 || gContext.mActualID == gContext.mEditingID) && IsRotateType(type))
